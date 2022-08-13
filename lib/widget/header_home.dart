@@ -1,11 +1,10 @@
+import 'package:fake_store/utils/color.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class HeaderHome extends StatelessWidget {
   const HeaderHome({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    final colorBackgroundAll = const Color.fromARGB(255, 166, 60, 184);
     var inputDecoration = const InputDecoration(
         hintText: 'Enter a search term', fillColor: Colors.amber);
     return Container(
@@ -13,7 +12,7 @@ class HeaderHome extends StatelessWidget {
       height: 200,
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
       decoration: BoxDecoration(
-        color: colorBackgroundAll,
+        color: colorPrimary,
         borderRadius:
             const BorderRadius.only(bottomRight: const Radius.circular(70)),
       ),
@@ -74,7 +73,7 @@ class HeaderHome extends StatelessWidget {
                       ),
                       Icon(
                         Icons.search_rounded,
-                        color: colorBackgroundAll,
+                        color: colorPrimary,
                         size: 24.0,
                       )
                     ],
@@ -89,7 +88,7 @@ class HeaderHome extends StatelessWidget {
                   ),
                   child: Icon(
                     Icons.shopping_cart_rounded,
-                    color: colorBackgroundAll,
+                    color: colorPrimary,
                     size: 30.0,
                   ),
                 )

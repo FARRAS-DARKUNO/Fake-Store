@@ -1,3 +1,4 @@
+import 'package:fake_store/widget/cetegory_home.dart';
 import 'package:fake_store/widget/header_home.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +12,6 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    final colorBackgroundAll = Color.fromARGB(255, 166, 60, 184);
     final colorBackground = Color.fromARGB(255, 255, 255, 255);
     return Scaffold(
       backgroundColor: colorBackground,
@@ -21,6 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Column(
               children: [
                 HeaderHome(),
+                CategoryHome(),
               ],
             ),
           ),
