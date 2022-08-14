@@ -1,5 +1,6 @@
 import 'package:fake_store/widget/cetegory_home.dart';
 import 'package:fake_store/widget/header_home.dart';
+import 'package:fake_store/widget/products_home.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -19,9 +20,10 @@ class _HomeScreenState extends State<HomeScreen> {
         child: SingleChildScrollView(
           child: Container(
             child: Column(
-              children: [
+              children: <Widget>[
                 HeaderHome(),
                 CategoryHome(),
+                ProductsHome(),
               ],
             ),
           ),

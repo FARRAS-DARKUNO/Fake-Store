@@ -29,8 +29,9 @@ class CategoryHome extends StatelessWidget {
           ),
           Container(
             // width: double.infinity,
-            height: 390,
+            height: 360,
             child: GridView.count(
+              physics: ScrollPhysics(),
               crossAxisCount: 2,
               crossAxisSpacing: 20,
               mainAxisSpacing: 25,
