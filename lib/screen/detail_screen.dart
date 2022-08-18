@@ -18,7 +18,11 @@ class _DetailScreenState extends State<DetailScreen> {
     return Scaffold(
       backgroundColor: colorBackground,
       body: Stack(
-        children: [PictureProduct(), ArrowAndChart(), DetailProduct()],
+        children: [
+          PictureProduct(),
+          ArrowAndChart(),
+          DetailProduct(),
+        ],
       ),
     );
   }

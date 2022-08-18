@@ -1,4 +1,5 @@
 import 'package:fake_store/screen/detail_screen.dart';
+import 'package:fake_store/screen/home_screen.dart';
 // import 'package:fake_store/screen/home_screen.dart';
 import 'package:flutter/material.dart';
 
